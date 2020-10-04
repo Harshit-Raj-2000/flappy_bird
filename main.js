@@ -23,9 +23,9 @@ function control(e){
   }
 }
 
-function createObstacle{
+function createObstacle() {
   let obstacle = document.createElement('div')
-  
+
 }
 
 

@@ -14,20 +14,20 @@
 #sky{
   width: 700px;
   height: 400px;
-  background-color: blue;
+  background-color: #70c5d1;
   position: absolute;
 }
 
 #ground{
   width: 700px;
   height: 100px;
-  background-color: brown;
+  background: url(images/bottom-background.png);
   position: absolute;
   bottom: 0px;
 }
 
 #bird{
-  background-color: yellow;
+  background: yellow;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -36,10 +36,27 @@
 }
 
 .obstacle{
-  width: 50px;
+  width: 60px;
   height: 200px;
-  background-color: green;
+  background: url(images/flappybird-pipe.png);
   position: absolute;
   left: 700px;
   bottom: 100px;
+}
+
+.topobstacle{
+  width: 60px;
+  height: 200px;
+  background: url(images/flappybird-pipe.png);
+  position: absolute;
+  left: 700px;
+  transform: rotate(180deg);
+}
+
+#score{
+  position: absolute;
+  background-color: black;
+  font-size: 24px;
+  color: white;
+  z-index: 2;
 }

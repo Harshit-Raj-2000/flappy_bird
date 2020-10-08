@@ -5,20 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="main.css">
-  <title>Document</title>
+  <title>Flappy Bird</title>
+  <link rel = "icon" href =
+"images/flappy-bird.png" 
+        type = "image/x-icon">
 </head>
 <body>
+  <div id="game">
+  <div id="leftBorder"></div>
   <div id="game-container">
     <div id="sky">
       <div id="bird"></div>
     </div>
     <div id="ground">
     </div>
-  </div>
-  <div id="info">
-    <div id="start">Press Enter to Start!</div>
     <div id="score"></div>
+    <div id="rules">
+      <ol><li>Enter to Start</li>
+      <li>Space to make bird fly!</li>
+    <li>Avoid the obstacles, and don't fall on the ground.</li>
+  <li>Enjoy!</li></ol>
+    </div>
   </div>
+  <div id="rightBorder"></div>
+</div>
 </body>
 <script src="main.js"></script>
 </html>

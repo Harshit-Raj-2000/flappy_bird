@@ -18,6 +18,7 @@ var startGame = (function() {
     return function() {
         if (!executed) {
             executed = true;
+            document.querySelector('#rules').innerHTML = ""
             birdTimer = setInterval(drop,20)
             createObstacle()
         }
@@ -83,14 +84,21 @@ function createObstacle() {
       gameOver = true
       console.log(birdHeight)
       console.log(obHeight)
-      console.log(bird.style.bottom)
+      console.log(topbottom)
       clearInterval(obMove)
       clearInterval(birdTimer)
+
+      document.querySelector('#rules').innerHTML = "You Lost! Click to replay!"
+      document.querySelector('#rules').style.marginTop = "50px"
+      document.querySelector('#rules').style.fontSize = "30px"
+      document.addEventListener('click',reload)
+
     }
   }
   let obMove = setInterval(moveOb,20)
 }
 
-
-
+function reload(){
+  window.location.reload();
+}
 })

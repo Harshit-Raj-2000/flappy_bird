@@ -3,12 +3,24 @@
   border: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #9de55a;
+}
+
+#game{
+  width: 100vw;
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #game-container{
   width: 700px;
   height: 500px;
   border: 1px solid black;
   position: absolute;
+  margin: auto;
 }
 
 #sky{
@@ -16,6 +28,7 @@
   height: 400px;
   background-color: #70c5d1;
   position: absolute;
+  z-index: -1;
 }
 
 #ground{
@@ -53,10 +66,17 @@
   transform: rotate(180deg);
 }
 
+
 #score{
   position: absolute;
   background-color: black;
   font-size: 24px;
   color: white;
+  z-index: 2;
+}
+
+#rules{
+  font-size: 30px;
+  position: fixed;
   z-index: 2;
 }

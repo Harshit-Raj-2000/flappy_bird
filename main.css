@@ -80,3 +80,20 @@ body{
   position: fixed;
   z-index: 2;
 }
+
+#allow{
+  display: none;
+}
+
+@media only screen and (max-width: 768px){
+ #game{
+   display: none;
+ }
+ body{
+   background-color: white;
+ }
+ #allow{
+   display: block;
+   padding: 20px;
+ }
+}
